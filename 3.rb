@@ -11,7 +11,7 @@
 # - Результат должен быть выведен в консоль командой puts
 #
 ## Решение:
-file = File.new('\data\3.txt','r:UTF-8')
+file = File.new('.\data\3.txt','r:UTF-8')
 
 codes = file.read.split("\n")
 result = 0
@@ -26,5 +26,6 @@ for i in (0..(codes.length-1))
 	end
 	result += max - min
 end
+file.close
 puts result
 

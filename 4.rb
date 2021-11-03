@@ -15,7 +15,7 @@
 #
 #
 ## Решение:
-file = File.new('\data\4.txt','r:UTF-8')
+file = File.new('.\data\4.txt','r:UTF-8')
 
 sizes = file.read.split("\n")
 result = 0
@@ -23,5 +23,6 @@ for i in sizes
 	helperI = i.split('x').map(&:to_i).sort
 	result += 2*helperI[0]*helperI[1] + 2*helperI[0]*helperI[2] + 2*helperI[1]*helperI[2] + helperI[0] * helperI[1]
 end
+file.close
 puts result
 

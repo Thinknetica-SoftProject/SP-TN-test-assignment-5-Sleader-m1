@@ -15,7 +15,7 @@
 #
 #
 ## Решение:
-file = File.new('data\1.txt','r:UTF-8')
+file = File.new('.\data\1.txt','r:UTF-8')
 instructions = file.read
 
 stage = 0
@@ -23,6 +23,7 @@ for i in (0..instructions.length)
 	stage += 1 if instructions[i] == '('
 	stage -= 1 if instructions[i] == ')'
 end
+file.close
 puts stage #232
 
 

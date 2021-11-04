@@ -15,7 +15,7 @@
 #
 #
 ## Решение:
-file = require File.expand_path("../data/1.txt", __FILE__) #File.new("../data/1.txt")
+file = File.new('/home/runner/work/SP-TN-test-assignment-5-Sleader-m1/SP-TN-test-assignment-5-Sleader-m1/data/1.txt','r:UTF-8')
 instructions = file.read
 
 stage = 0
@@ -25,5 +25,7 @@ for i in (0..instructions.length)
 end
 file.close
 puts stage #232
+
+
 
 

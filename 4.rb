@@ -15,7 +15,7 @@
 #
 #
 ## Решение:
-file = File.new('.\data\4.txt','r:UTF-8')
+file = File.new('/home/runner/work/SP-TN-test-assignment-5-Sleader-m1/SP-TN-test-assignment-5-Sleader-m1/data/1.txt','r:UTF-8')
 
 sizes = file.read.split("\n")
 result = 0
